@@ -3,7 +3,7 @@
 
 # devon-rex-ontology
 
-This ontology... YOUR DESCRIPTION HERE
+This ontology is a test.
 
 ## Versions
 
