@@ -1,0 +1,6 @@
+term
+http://purl.obolibrary.org/obo/devo/imports/pato_import.owl
+http://www.w3.org/2002/07/owl#Ontology
+http://www.w3.org/2002/07/owl#Class
+http://purl.obolibrary.org/obo/devo.owl
+http://purl.obolibrary.org/obo/DEVO_00000000
