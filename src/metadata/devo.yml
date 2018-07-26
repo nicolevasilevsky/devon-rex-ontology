@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/devo
+
+idspace: DEVO
+base_url: /obo/devo
+
+products:
+- devo.owl: https://raw.githubusercontent.com/nicolevasilevsky/devon-rex-ontology/master/devo.owl
+- devo.obo: https://raw.githubusercontent.com/nicolevasilevsky/devon-rex-ontology/master/devo.obo
+
+term_browser: ontobee
+example_terms:
+- DEVO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/nicolevasilevsky/devon-rex-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/nicolevasilevsky/devon-rex-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/DEVO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/nicolevasilevsky/devon-rex-ontology/master/

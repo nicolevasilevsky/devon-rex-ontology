@@ -1,0 +1,7 @@
+*.tmp
+src/ontology/mirror
+src/ontology/mirror/*
+src/ontology/devo.obo
+src/ontology/devo.owl
+semantic.cache
+bin/
