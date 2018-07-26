@@ -1,3 +1,4 @@
+Prefix(:=<http://purl.obolibrary.org/obo/devo.owl/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -10,5 +11,25 @@ Import(<http://purl.obolibrary.org/obo/devo/imports/pato_import.owl>)
 Annotation(rdfs:comment "Devon Rex Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/DEVO_00000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/DEVO_0100001>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/DEVO_00000000> (devo)
+
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DEVO_00000000> "devo"@en)
+
+# Class: <http://purl.obolibrary.org/obo/DEVO_0100001> (devon rex)
+
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/creator> <http://purl.obolibrary.org/obo/DEVO_0100001> <http://orcid.org/0000-0001-5208-3432>)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/date> <http://purl.obolibrary.org/obo/DEVO_0100001> "2018-07-26T22:42:32Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/DEVO_0100001> "devon rex")
+SubClassOf(<http://purl.obolibrary.org/obo/DEVO_0100001> <http://purl.obolibrary.org/obo/DEVO_00000000>)
+
+
 )
